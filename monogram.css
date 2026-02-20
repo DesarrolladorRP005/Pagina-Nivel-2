@@ -415,7 +415,6 @@ header nav {
 
     #workfl .carta-double h2 {
         text-align: right;
-       
         position: absolute;
         right: calc(( 100vw - 1200px ) / 2 + 120px);
     }
