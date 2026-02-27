@@ -936,11 +936,10 @@ body {
 }
 
 /* ======================================== */
-/* ===== VERSION MOVIL - MENOR A 920px ===== */
+/* ===== VERSION MOVIL - MENOR A 1050px ===== */
 /* ======================================== */
 
-/* Cuando la pantalla sea menor a 920px */
-@media (max-width: 920px) {
+@media (max-width: 1050px) {
 
     /* ----- CONTENEDOR PRINCIPAL ----- */
     .container {
