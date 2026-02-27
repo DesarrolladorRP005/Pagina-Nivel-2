@@ -514,10 +514,10 @@ body {
 
 .tags span {
     background: #eee;
-    padding: 15px 25px;
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 /* ===== ABOUT SECTION ===== */
