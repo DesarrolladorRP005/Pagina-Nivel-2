@@ -1,0 +1,1390 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal centrado */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tags-section,
+.about-section {
+    padding: 60px 0;
+}
+
+/* Sección con fondo azul claro - donde va la tarjeta del producto */
+.product-section-wrapper {
+    background: #e3f2fd;
+    width: 100%;
+
+    overflow: visible;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+
+/* Barra superior del header */
+.top-header {
+    display: flex;
+    height: 70px;
+    border-bottom: 1px solid #e5e5e5;
+    background: white;
+}
+
+/* Bloque rojo con el logo de Nintendo */
+.logo-block {
+    background: #ff000a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.logo-block img {
+    width: auto;
+    height: 59px;
+}
+
+/* Resto del header - navegación y botones */
+.header-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px 0 40px;
+}
+
+/* Menú de navegación superior */
+.top-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.top-nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #2d2d2d;
+    font-weight: 500;
+}
+
+.nav-icon {
+    width: 16px;
+}
+
+/* Lado derecho del header - iconos y botón */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-ri-he {
+    width: 35px;
+    cursor: pointer;
+    padding: 4px 10px;
+    background-color: #d6d5d5;
+    border-radius: 20px;
+}
+
+.icon {
+    width: 35px;
+    cursor: pointer;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 14px;
+    border-radius: 25px;
+    background: #d6d5d5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 25px;
+}
+
+/* Ocultar elementos móviles por defecto (en desktop) */
+.mobile-header,
+.hamburger-btn,
+.mobile-menu,
+.menu-toggle {
+    display: none;
+}
+
+/* Botón de inicio de sesión */
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 16px;
+}
+
+/* ===== BARRA PROMOCIONAL ===== */
+
+/* Contenedor de ofertas y puntos */
+.prom-coins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: white;
+    padding: 10px 0;
+}
+
+/* Cada bloque de oferta */
+.promo-bar,
+.coins-redem {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.promo-bar .icon,
+.coins-redem .icon {
+    margin-right: 8px;
+}
+
+/* Línea divisoria entre ofertas */
+.promo-bar {
+    border-right: 1px solid #ccc;
+}
+
+/* ===== PRODUCTO ===== */
+
+/* Migas de pan */
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    padding: 0 0 20px 0;
+}
+
+/* Tarjeta principal del producto */
+.product-card {
+    background: white;
+    border-radius: 16px;
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: 30px;
+}
+
+/* Contenido del producto - imagen y detalles */
+.product-content {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Lado izquierdo - imágenes */
+.product-left {
+    flex: 1.7;
+    min-width: 300px;
+}
+
+/* Lado derecho - información */
+.product-right {
+    flex: 1.1;
+    min-width: 250px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Miniaturas debajo de la imagen */
+.thumb-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    overflow-x: auto;
+}
+
+.thumb-row img {
+    width: clamp(60px, 10vw, 120px);
+    flex: 0 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.esrb-section {
+    margin-top: 20px;
+}
+
+.esrb-content {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.esrb-img {
+    width: 75px;
+}
+
+.esrb-text {
+    flex: 1;
+}
+
+.esrb-text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.divider {
+    height: 1px;
+    background: #d9d9d9;
+    margin: 10px 0;
+}
+
+.users-interact {
+    font-size: 14px;
+    color: #555;
+}
+
+.compatibility-box {
+    margin-top: 20px;
+    background: #f3f3f3;
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.check-img {
+    width: 28px;
+    height: 28px;
+}
+
+.compatibility-info h3 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.compatibility-info p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.product-right {
+    flex: 1.1;
+    min-width: 250px;
+
+    padding: 20px 0;
+    /* arriba y abajo */
+}
+
+/* Sección de versión del producto */
+.version p {
+    margin: 20px 0 10px;
+    font-size: 19px;
+}
+
+/* Botones de selección de versión */
+.version-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.version-btn,
+.version-btn-desactive {
+    flex: 0 0 auto;
+    padding: 15px 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: 3px solid;
+    background: white;
+}
+
+.version-btn {
+    border-color: #e60012;
+}
+
+.version-btn-desactive {
+    border-color: #cacaca;
+}
+
+.version-btn img,
+.version-btn-desactive img {
+    height: 15px;
+}
+
+/* Información de upgrade y edición */
+.up-version {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.up-version h1 {
+    color: #e60012;
+    font-size: 18px;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.up-version .edition {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.up-version .edition h2 {
+    color: #333;
+    font-size: 17px;
+    margin: 0;
+}
+
+.up-version .edition p {
+    color: #777;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Precio */
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.price-row img {
+    height: 35px;
+    width: auto;
+}
+
+/* Botón de descarga */
+.download-btn {
+    background: #e60012;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.download-btn img {
+    height: 25px;
+}
+
+.small-note {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* ===== DESCRIPCIÓN ===== */
+
+.description-wrapper {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.desc-left {
+    flex: 1;
+    max-width: 520px;
+}
+
+.desc-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    color: #444;
+    line-height: 1.6;
+}
+
+.dots {
+    margin: 15px 0;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e60012;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.plus {
+    font-size: 25px;
+}
+
+.publisher-note {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    background: #e60012;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #c50010;
+}
+
+.desc-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.desc-right img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 16px;
+    display: block;
+}
+
+/* Etiquetas relacionadas */
+.tags-section {
+    padding: 40px 0;
+}
+
+.tags-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: #eee;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+.about-section {
+    background: white;
+    padding: 60px 0;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 15px;
+}
+
+/* CONTENEDOR GENERAL */
+.about {
+    width: 100%;
+}
+
+/* ===== CADA FILA ===== */
+
+.about-row {
+    display: flex;
+    align-items: center;
+    /* ← centra verticalmente */
+    padding: 25px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Columna izquierda más controlada */
+.label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 320px;
+    font-weight: 600;
+    color: #333;
+}
+
+.label img {
+    width: 22px;
+}
+
+/* LADO DERECHO SIMPLE */
+
+.value {
+    flex: 1;
+    text-align: left;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* ===== PLAY MODES (estructura compleja) ===== */
+
+.play-modes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.play-note {
+    font-size: 13px;
+    color: #666;
+    text-align: left;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+/* FILA HORIZONTAL DE ICONOS */
+
+.play-icons {
+    display: flex;
+    gap: 50px;
+}
+
+/* CADA ICONO EN VERTICAL */
+
+.play-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+}
+
+.play-item img {
+    width: auto;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+/* TEXTO PEQUEÑO INFERIOR */
+
+.play-note {
+    font-size: 13px;
+    color: #666;
+    text-align: left;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+/* ===== ESRB IMAGEN ===== */
+
+.esrb {
+    width: 80px;
+}
+
+/* ===== NUMBER OF PLAYERS ===== */
+
+.players-section {
+    padding: 40px 0px;
+}
+
+.players-content {
+    text-align: left;
+}
+
+.players-content h3 {
+    font-size: 20px;
+    /* un poco más pequeño que About */
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #222;
+    /* más oscuro */
+}
+
+.players-content p {
+    font-size: 17px;
+    /* 3px más pequeño aprox */
+    color: #777;
+    /* más claro */
+}
+
+.more-section {
+    padding-top: 60px;
+    background: #ffffff;
+}
+
+.more-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    margin: 0 30px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cacaca;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-top {
+    margin-bottom: 15px;
+}
+
+.card-top h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.date {
+    font-size: 14px;
+    color: #777;
+}
+
+.price-block {
+    margin-top: auto;
+    margin-bottom: 15px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sale-badge {
+    background: #e60012;
+    color: white;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: max-content;
+    margin-bottom: 8px;
+}
+
+.price-row2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #d6d5d5;
+}
+
+.discount-img {
+    width: 55px;
+    height: auto;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-type {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.game-type img {
+    width: 18px;
+}
+
+.heart {
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Warning section */
+.warning-section {
+    background: transparent;
+    padding: 60px 0;
+}
+
+.warning-section p {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* ===== FOOTERS ===== */
+
+/* Footer rojo con nombre */
+.red-footer {
+    background: #ff000a;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Nintendo-footer {
+    height: 120px;
+    width: auto;
+    margin: 0;
+}
+
+/* Footer links */
+.big-footer {
+    background: #ffffff;
+    padding: 50px 120px;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+/* Columnas */
+.col {
+    flex: 1;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================= */
+/* LÍNEAS VERTICALES */
+/* ============================= */
+
+/* Línea en columnas 2, 3 y 4 */
+.footer-columns .col:nth-child(2),
+.footer-columns .col:nth-child(3),
+.footer-columns .col:nth-child(4) {
+    border-left: 1px solid #ddd;
+}
+
+/* Quitamos línea general en 5 y 6 */
+.footer-columns .col:nth-child(5),
+.footer-columns .col:nth-child(6) {
+    border-left: none;
+}
+
+/* Secciones internas (para columnas 5 y 6) */
+.section {
+    margin-bottom: 30px;
+    padding-left: 40px;
+    position: relative;
+}
+
+/* Línea individual por sección */
+.section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ddd;
+}
+
+/* ============================= */
+/* TIPOGRAFÍA Y LINKS */
+/* ============================= */
+
+.col h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.col a {
+    text-decoration: none;
+    color: #e60012;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.col a:hover {
+    text-decoration: underline;
+}
+
+/* ============================= */
+/* Redes + ESRB */
+/* ============================= */
+
+.footer-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.social-img {
+    width: 180px;
+}
+
+.esrb-img {
+    width: 80px;
+}
+
+/* ============================= */
+/* Barra inferior */
+/* ============================= */
+
+.bottom-bar {
+    background: #313131;
+    color: white;
+    padding: 18px 120px;
+    font-size: 12px;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-content .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.flag {
+    width: 20px;
+}
+
+/* ======================================== */
+/* ===== VERSION MOVIL - MENOR A 920px ===== */
+/* ======================================== */
+
+/* Cuando la pantalla sea menor a 920px */
+@media (max-width: 920px) {
+
+    /* ----- CONTENEDOR PRINCIPAL ----- */
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+
+    /* ----- HEADER MOVIL ----- */
+    .top-header {
+        position: relative;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: #ff000a !important;
+    }
+
+    /* Logo centrado y más grande */
+    .logo-block {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        height: 60px;
+        background: transparent !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-block img {
+        height: 45px;
+    }
+
+    /* Ocultar la navegación normal y el contenido derecho */
+    .header-content,
+    .header-right {
+        display: none;
+    }
+
+    /* Nuevo header mobile con menú sandwich */
+    .mobile-header {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 15px;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    /* Botón hamburguesa */
+    .hamburger-btn {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* Menú móvil desplegable */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .mobile-menu a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+    }
+
+    .mobile-menu a img {
+        width: 20px;
+    }
+
+    /* Checkbox del menú */
+    .menu-toggle:checked~.mobile-menu {
+        display: block;
+    }
+
+    /* Footer columnas centradas */
+    .big-footer {
+        padding: 30px 20px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .col {
+        padding: 0;
+        border-left: none !important;
+        text-align: center;
+    }
+
+    .section {
+        padding-left: 0;
+    }
+
+    .section::before {
+        display: none;
+    }
+
+    .footer-extra {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* ======= NO MORE CHANGES BELOW 532px ======= */
+    /* Mantener el mismo diseño desde 532px hacia abajo */
+
+}
+
+/* ======================================== */
+/* ===== VERSION MUY PEQUEÑA - 689px ===== */
+/* ======================================== */
+
+/* Escalar todo el contenido proporcionalmente */
+@media (max-width: 689px) {
+
+    /* Reducir el tamaño de fuente general */
+    body {
+        font-size: 85%;
+    }
+
+    /* Contenedor más pequeño */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Header más pequeño */
+    .top-header {
+        height: 50px;
+    }
+
+    .logo-block {
+        padding: 0 15px;
+    }
+
+    .logo-block img {
+        height: 35px;
+    }
+
+    .mobile-header {
+        height: 50px;
+    }
+
+    .hamburger-btn {
+        width: 24px;
+        height: 20px;
+    }
+
+    /* Promo bar más pequeña */
+    .prom-coins {
+        padding: 8px;
+    }
+
+    .promo-bar,
+    .coins-redem {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .promo-bar .icon,
+    .coins-redem .icon {
+        width: 14px;
+        margin-right: 5px;
+    }
+
+    /* Producto - tarjeta más pequeña */
+    .product-section-wrapper {
+        padding: 10px 0;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .breadcrumb {
+        font-size: 11px;
+        padding: 0 0 10px 0;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .thumb-row img {
+        width: 60px;
+        min-width: 60px;
+    }
+
+    /* Título del producto */
+    .product-right h1 {
+        font-size: 18px;
+    }
+
+    .version p {
+        font-size: 14px;
+    }
+
+    .version-buttons {
+        gap: 8px;
+    }
+
+    .version-btn,
+    .version-btn-desactive {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .version-btn img,
+    .version-btn-desactive img {
+        height: 12px;
+    }
+
+    .up-version h1 {
+        font-size: 13px;
+    }
+
+    .price-row {
+        font-size: 18px;
+    }
+
+    .price-row img {
+        height: 25px;
+    }
+
+    .download-btn {
+        padding: 10px;
+    }
+
+    .download-btn img {
+        height: 18px;
+    }
+
+    /* Descripción */
+    .description-wrapper {
+        padding: 20px 0;
+    }
+
+    .description {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .desc-left h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .main-text {
+        font-size: 13px;
+    }
+
+    .desc-right img {
+        max-width: 100%;
+    }
+
+    .main-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    /* Tags */
+    .tags-section {
+        padding: 20px 10px;
+    }
+
+    .tags-section h2 {
+        font-size: 18px;
+    }
+
+    .tags span {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    /* About */
+    .about-section {
+        padding: 20px 10px;
+    }
+
+    .about-section h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .about-row {
+        padding: 12px 0;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+
+    .label img {
+        width: 16px;
+    }
+
+    .value {
+        font-size: 12px;
+    }
+
+    .play-icons {
+        gap: 15px;
+    }
+
+    .play-item img {
+        height: 30px;
+    }
+
+    .play-item span {
+        font-size: 10px;
+    }
+
+    .play-note {
+        font-size: 10px;
+    }
+
+    /* Players section */
+    .players-section {
+        padding: 20px 10px;
+    }
+
+    .players-content h3 {
+        font-size: 16px;
+    }
+
+    .players-content p {
+        font-size: 13px;
+    }
+
+    /* More like this - VERTICAL */
+    .more-section {
+        padding: 20px 10px;
+    }
+
+    .more-section h2 {
+        font-size: 18px;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 0;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Warning */
+    .warning-section {
+        padding: 20px 10px;
+    }
+
+    .warning-section p {
+        font-size: 10px;
+    }
+
+    /* Footer */
+    .red-footer {
+        padding: 15px;
+    }
+
+    .Nintendo-footer {
+        height: 40px;
+    }
+
+    .big-footer {
+        padding: 20px 15px;
+    }
+
+    .footer-columns {
+        gap: 15px;
+    }
+
+    .col h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .col a {
+        font-size: 12px;
+    }
+
+    .footer-extra {
+        margin-top: 20px;
+    }
+
+    .social-img {
+        width: 120px;
+    }
+
+    .esrb-img {
+        width: 60px;
+    }
+
+    .bottom-bar {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    .bottom-content {
+        gap: 8px;
+    }
+
+    .bottom-content a {
+        font-size: 10px;
+    }
+
+}
