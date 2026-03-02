@@ -29,6 +29,7 @@
 body {
     background: #ffffff;
     color: #333;
+    font-family: 'Inter', sans-serif;
 }
 
 /* ===== HEADER ===== */
@@ -624,7 +625,7 @@ body {
 
 /* ===== ESRB IMAGEN ===== */
 
-.esrb {
+.esrb-img {
     width: 80px;
 }
 
